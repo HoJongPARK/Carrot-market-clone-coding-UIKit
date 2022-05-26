@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cfz-m7-3B0">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="3wn-lc-4B1">
+            <objects>
+                <viewController id="BWp-5F-aqM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6o7-Xz-PG1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당근마켓" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaL-Mp-aMq">
+                                <rect key="frame" x="118" y="128" width="139" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
+                                <color key="textColor" name="BrandColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" image="OnboardingImage" translatesAutoresizingMaskIntoConstraints="NO" id="TbN-jS-0e0">
+                                <rect key="frame" x="20.666666666666657" y="216" width="334" height="336"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우리 동네 중고 직거래 당근마켓" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4Rg-Zd-JC6">
+                                <rect key="frame" x="65.666666666666686" y="592" width="244" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당근마켓은 동네 직거래 마켓이에요 내 동네를 설정하고 시작해보세요!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vbx-YP-gkT">
+                                <rect key="frame" x="70.666666666666671" y="632" width="233.66666666666663" height="40.666666666666629"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQy-6E-VcY">
+                                <rect key="frame" x="16" y="688.66666666666663" width="343" height="49.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49.329999999999998" id="5uw-yR-Rla"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="내 동내 설정하고 시작하기">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                                    <directionalEdgeInsets key="contentInsets" top="14" leading="0.0" bottom="14" trailing="0.0"/>
+                                    <color key="baseBackgroundColor" name="BrandColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Y6W-OH-hqX" kind="show" id="zOQ-LQ-Cn4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="smV-uL-tTd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TbN-jS-0e0" firstAttribute="top" secondItem="eaL-Mp-aMq" secondAttribute="bottom" constant="40" id="3JZ-es-3P6"/>
+                            <constraint firstItem="eaL-Mp-aMq" firstAttribute="centerX" secondItem="6o7-Xz-PG1" secondAttribute="centerX" id="6dx-jF-jQb"/>
+                            <constraint firstItem="aQy-6E-VcY" firstAttribute="leading" secondItem="smV-uL-tTd" secondAttribute="leading" constant="16" id="8PZ-ol-XpC"/>
+                            <constraint firstItem="vbx-YP-gkT" firstAttribute="top" secondItem="4Rg-Zd-JC6" secondAttribute="bottom" constant="16" id="EC2-oU-Kik"/>
+                            <constraint firstItem="eaL-Mp-aMq" firstAttribute="top" secondItem="smV-uL-tTd" secondAttribute="top" constant="40" id="GW0-dn-T3u"/>
+                            <constraint firstItem="TbN-jS-0e0" firstAttribute="centerX" secondItem="6o7-Xz-PG1" secondAttribute="centerX" id="K4e-cg-cz3"/>
+                            <constraint firstItem="vbx-YP-gkT" firstAttribute="centerX" secondItem="6o7-Xz-PG1" secondAttribute="centerX" id="KAI-UB-v9I"/>
+                            <constraint firstItem="4Rg-Zd-JC6" firstAttribute="top" secondItem="TbN-jS-0e0" secondAttribute="bottom" constant="40" id="WIL-9v-ki7"/>
+                            <constraint firstItem="smV-uL-tTd" firstAttribute="bottom" secondItem="aQy-6E-VcY" secondAttribute="bottom" constant="40" id="e1u-0T-Q6e"/>
+                            <constraint firstItem="4Rg-Zd-JC6" firstAttribute="centerX" secondItem="6o7-Xz-PG1" secondAttribute="centerX" id="gtM-8n-agd"/>
+                            <constraint firstItem="smV-uL-tTd" firstAttribute="trailing" secondItem="aQy-6E-VcY" secondAttribute="trailing" constant="16" id="w4V-6C-hxK"/>
+                            <constraint firstItem="aQy-6E-VcY" firstAttribute="top" secondItem="vbx-YP-gkT" secondAttribute="bottom" constant="16" id="weD-jR-8P7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3mD-ud-fcT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="emd-r4-bOo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829" y="92"/>
+        </scene>
+        <!--LocalSearch-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LocalSearch" id="Y6W-OH-hqX" userLabel="LocalSearch" customClass="LocalSearchViewController" customModule="CarrotMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" userLabel="LocalSearch">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="A4o-hh-oOW">
+                        <barButtonItem key="leftBarButtonItem" image="arrow.backward" catalog="system" id="YpD-FI-YTu">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="dismiss:" destination="Y6W-OH-hqX" id="ZSS-oE-XHd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1612" y="92"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xFX-Om-s9u">
+            <objects>
+                <navigationController storyboardIdentifier="Onboarding" automaticallyAdjustsScrollViewInsets="NO" id="cfz-m7-3B0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4en-N1-7NH">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BWp-5F-aqM" kind="relationship" relationship="rootViewController" id="FPb-tn-E44"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPy-SK-VdB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60.869565217391312" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="OnboardingImage" width="334" height="332"/>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
+        <namedColor name="BrandColor">
+            <color red="0.88235294819999999" green="0.58039218189999997" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -13,6 +13,9 @@
 		009EAA4E283DFE3D00AB1CF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009EAA4C283DFE3D00AB1CF7 /* Main.storyboard */; };
 		009EAA50283DFE3E00AB1CF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009EAA4F283DFE3E00AB1CF7 /* Assets.xcassets */; };
 		009EAA53283DFE3E00AB1CF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009EAA51283DFE3E00AB1CF7 /* LaunchScreen.storyboard */; };
+		009EAA60283E029800AB1CF7 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009EAA5F283E029800AB1CF7 /* Onboarding.storyboard */; };
+		009EAA62283E048900AB1CF7 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009EAA61283E048900AB1CF7 /* ViewControllerExtension.swift */; };
+		00E6942D283F743E00C32AF9 /* LocalSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E6942C283F743E00C32AF9 /* LocalSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		009EAA4F283DFE3E00AB1CF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		009EAA52283DFE3E00AB1CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		009EAA54283DFE3E00AB1CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		009EAA5F283E029800AB1CF7 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		009EAA61283E048900AB1CF7 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		00E6942C283F743E00C32AF9 /* LocalSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,66 @@
 		009EAA45283DFE3D00AB1CF7 /* CarrotMarket */ = {
 			isa = PBXGroup;
 			children = (
-				009EAA46283DFE3D00AB1CF7 /* AppDelegate.swift */,
-				009EAA48283DFE3D00AB1CF7 /* SceneDelegate.swift */,
-				009EAA4A283DFE3D00AB1CF7 /* ViewController.swift */,
+				00E6942B283F742D00C32AF9 /* ViewController */,
+				009EAA5E283DFF7E00AB1CF7 /* Extension */,
+				009EAA5D283DFF7B00AB1CF7 /* Model */,
+				009EAA5C283DFF7600AB1CF7 /* ViewModel */,
+				009EAA5B283DFF7100AB1CF7 /* View */,
+				009EAA5A283DFF6400AB1CF7 /* System */,
 				009EAA4C283DFE3D00AB1CF7 /* Main.storyboard */,
+				009EAA5F283E029800AB1CF7 /* Onboarding.storyboard */,
 				009EAA4F283DFE3E00AB1CF7 /* Assets.xcassets */,
 				009EAA51283DFE3E00AB1CF7 /* LaunchScreen.storyboard */,
 				009EAA54283DFE3E00AB1CF7 /* Info.plist */,
 			);
 			path = CarrotMarket;
+			sourceTree = "<group>";
+		};
+		009EAA5A283DFF6400AB1CF7 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				009EAA46283DFE3D00AB1CF7 /* AppDelegate.swift */,
+				009EAA48283DFE3D00AB1CF7 /* SceneDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		009EAA5B283DFF7100AB1CF7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		009EAA5C283DFF7600AB1CF7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		009EAA5D283DFF7B00AB1CF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		009EAA5E283DFF7E00AB1CF7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				009EAA61283E048900AB1CF7 /* ViewControllerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		00E6942B283F742D00C32AF9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				009EAA4A283DFE3D00AB1CF7 /* ViewController.swift */,
+				00E6942C283F743E00C32AF9 /* LocalSearchViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +185,7 @@
 				009EAA53283DFE3E00AB1CF7 /* LaunchScreen.storyboard in Resources */,
 				009EAA50283DFE3E00AB1CF7 /* Assets.xcassets in Resources */,
 				009EAA4E283DFE3D00AB1CF7 /* Main.storyboard in Resources */,
+				009EAA60283E029800AB1CF7 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +198,8 @@
 			files = (
 				009EAA4B283DFE3D00AB1CF7 /* ViewController.swift in Sources */,
 				009EAA47283DFE3D00AB1CF7 /* AppDelegate.swift in Sources */,
+				00E6942D283F743E00C32AF9 /* LocalSearchViewController.swift in Sources */,
+				009EAA62283E048900AB1CF7 /* ViewControllerExtension.swift in Sources */,
 				009EAA49283DFE3D00AB1CF7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,9 +352,10 @@
 				INFOPLIST_FILE = CarrotMarket/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +365,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,9 +381,10 @@
 				INFOPLIST_FILE = CarrotMarket/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +394,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
