@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0098F83E2843144C00D129C6 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0098F83D2843144C00D129C6 /* PaddingLabel.swift */; };
+		0098F841284318B100D129C6 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0098F840284318B100D129C6 /* Constant.swift */; };
 		009EAA47283DFE3D00AB1CF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009EAA46283DFE3D00AB1CF7 /* AppDelegate.swift */; };
 		009EAA49283DFE3D00AB1CF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009EAA48283DFE3D00AB1CF7 /* SceneDelegate.swift */; };
 		009EAA4B283DFE3D00AB1CF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009EAA4A283DFE3D00AB1CF7 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		0098F83D2843144C00D129C6 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		0098F840284318B100D129C6 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		009EAA43283DFE3D00AB1CF7 /* CarrotMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarrotMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		009EAA46283DFE3D00AB1CF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		009EAA48283DFE3D00AB1CF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		0098F83F284318AC00D129C6 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				0098F840284318B100D129C6 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		009EAA3A283DFE3D00AB1CF7 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +88,7 @@
 		009EAA45283DFE3D00AB1CF7 /* CarrotMarket */ = {
 			isa = PBXGroup;
 			children = (
+				0098F83F284318AC00D129C6 /* Constant */,
 				00E69430283F7EEF00C32AF9 /* DataSource */,
 				00E6942B283F742D00C32AF9 /* ViewController */,
 				009EAA5E283DFF7E00AB1CF7 /* Extension */,
@@ -239,6 +250,7 @@
 				00E69433283F7F5800C32AF9 /* Town.swift in Sources */,
 				00E6942D283F743E00C32AF9 /* LocalSearchViewController.swift in Sources */,
 				0098F83E2843144C00D129C6 /* PaddingLabel.swift in Sources */,
+				0098F841284318B100D129C6 /* Constant.swift in Sources */,
 				009EAA62283E048900AB1CF7 /* ViewControllerExtension.swift in Sources */,
 				009EAA49283DFE3D00AB1CF7 /* SceneDelegate.swift in Sources */,
 			);
