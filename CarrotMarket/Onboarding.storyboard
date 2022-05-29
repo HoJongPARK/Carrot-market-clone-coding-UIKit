@@ -85,9 +85,60 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" userLabel="LocalSearch">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcW-rQ-39x">
+                                <rect key="frame" x="16" y="96" width="343" height="35.666666666666657"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="현재 위치로 찾기">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="13"/>
+                                    <directionalEdgeInsets key="contentInsets" top="10" leading="0.0" bottom="10" trailing="0.0"/>
+                                    <color key="baseBackgroundColor" name="BrandColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZRI-1A-jyg">
+                                <rect key="frame" x="0.0" y="184.66666666666669" width="375" height="627.33333333333326"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TownCell" textLabel="XcC-6x-MDW" style="IBUITableViewCellStyleDefault" id="VDH-JU-3u3">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VDH-JU-3u3" id="UJO-ob-TYW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XcC-6x-MDW">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="근처 동네" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBu-6f-QqO">
+                                <rect key="frame" x="16" y="147.66666666666666" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UcW-rQ-39x" secondAttribute="trailing" constant="16" id="38I-4c-7oF"/>
+                            <constraint firstItem="EBu-6f-QqO" firstAttribute="leading" secondItem="UcW-rQ-39x" secondAttribute="leading" id="3ZF-aG-qWj"/>
+                            <constraint firstItem="ZRI-1A-jyg" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="68J-AC-jcI"/>
+                            <constraint firstItem="ZRI-1A-jyg" firstAttribute="top" secondItem="EBu-6f-QqO" secondAttribute="bottom" constant="16" id="ECA-BX-qVj"/>
+                            <constraint firstItem="UcW-rQ-39x" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Y1p-0l-NeZ"/>
+                            <constraint firstAttribute="bottom" secondItem="ZRI-1A-jyg" secondAttribute="bottom" id="ZcG-Bh-4nK"/>
+                            <constraint firstItem="UcW-rQ-39x" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="kK6-EV-ft7"/>
+                            <constraint firstItem="EBu-6f-QqO" firstAttribute="top" secondItem="UcW-rQ-39x" secondAttribute="bottom" constant="16" id="knu-pD-Qxg"/>
+                            <constraint firstItem="ZRI-1A-jyg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="xLp-gm-uvq"/>
+                        </constraints>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="A4o-hh-oOW">
                         <barButtonItem key="leftBarButtonItem" image="arrow.backward" catalog="system" id="YpD-FI-YTu">
                             <color key="tintColor" systemColor="labelColor"/>
@@ -97,10 +148,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="searchText" destination="EBu-6f-QqO" id="tku-8x-FoW"/>
+                        <outlet property="tableView" destination="ZRI-1A-jyg" id="Cro-r2-9Bc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1612" y="92"/>
+            <point key="canvasLocation" x="1612" y="91.625615763546804"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xFX-Om-s9u">
@@ -125,7 +180,7 @@
         <image name="OnboardingImage" width="334" height="332"/>
         <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <namedColor name="BrandColor">
-            <color red="0.88235294819999999" green="0.58039218189999997" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.88200002908706665" green="0.57999998331069946" blue="0.36100000143051147" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

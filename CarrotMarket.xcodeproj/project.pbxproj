@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0098F83E2843144C00D129C6 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0098F83D2843144C00D129C6 /* PaddingLabel.swift */; };
 		009EAA47283DFE3D00AB1CF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009EAA46283DFE3D00AB1CF7 /* AppDelegate.swift */; };
 		009EAA49283DFE3D00AB1CF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009EAA48283DFE3D00AB1CF7 /* SceneDelegate.swift */; };
 		009EAA4B283DFE3D00AB1CF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009EAA4A283DFE3D00AB1CF7 /* ViewController.swift */; };
@@ -16,9 +17,13 @@
 		009EAA60283E029800AB1CF7 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009EAA5F283E029800AB1CF7 /* Onboarding.storyboard */; };
 		009EAA62283E048900AB1CF7 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009EAA61283E048900AB1CF7 /* ViewControllerExtension.swift */; };
 		00E6942D283F743E00C32AF9 /* LocalSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E6942C283F743E00C32AF9 /* LocalSearchViewController.swift */; };
+		00E6942F283F7E3400C32AF9 /* MockTown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E6942E283F7E3400C32AF9 /* MockTown.swift */; };
+		00E69433283F7F5800C32AF9 /* Town.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E69432283F7F5800C32AF9 /* Town.swift */; };
+		00E69437283FC23100C32AF9 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E69436283FC23100C32AF9 /* UITextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0098F83D2843144C00D129C6 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		009EAA43283DFE3D00AB1CF7 /* CarrotMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarrotMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		009EAA46283DFE3D00AB1CF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		009EAA48283DFE3D00AB1CF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +35,9 @@
 		009EAA5F283E029800AB1CF7 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		009EAA61283E048900AB1CF7 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		00E6942C283F743E00C32AF9 /* LocalSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchViewController.swift; sourceTree = "<group>"; };
+		00E6942E283F7E3400C32AF9 /* MockTown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTown.swift; sourceTree = "<group>"; };
+		00E69432283F7F5800C32AF9 /* Town.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Town.swift; sourceTree = "<group>"; };
+		00E69436283FC23100C32AF9 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0098F83C2843143F00D129C6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0098F83D2843144C00D129C6 /* PaddingLabel.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		009EAA3A283DFE3D00AB1CF7 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +78,7 @@
 		009EAA45283DFE3D00AB1CF7 /* CarrotMarket */ = {
 			isa = PBXGroup;
 			children = (
+				00E69430283F7EEF00C32AF9 /* DataSource */,
 				00E6942B283F742D00C32AF9 /* ViewController */,
 				009EAA5E283DFF7E00AB1CF7 /* Extension */,
 				009EAA5D283DFF7B00AB1CF7 /* Model */,
@@ -89,6 +106,7 @@
 		009EAA5B283DFF7100AB1CF7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0098F83C2843143F00D129C6 /* Helpers */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -103,6 +121,7 @@
 		009EAA5D283DFF7B00AB1CF7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				00E69432283F7F5800C32AF9 /* Town.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				009EAA61283E048900AB1CF7 /* ViewControllerExtension.swift */,
+				00E69436283FC23100C32AF9 /* UITextField.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -122,6 +142,22 @@
 				00E6942C283F743E00C32AF9 /* LocalSearchViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		00E69430283F7EEF00C32AF9 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				00E69431283F7F4200C32AF9 /* Town */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		00E69431283F7F4200C32AF9 /* Town */ = {
+			isa = PBXGroup;
+			children = (
+				00E6942E283F7E3400C32AF9 /* MockTown.swift */,
+			);
+			path = Town;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +233,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				009EAA4B283DFE3D00AB1CF7 /* ViewController.swift in Sources */,
+				00E6942F283F7E3400C32AF9 /* MockTown.swift in Sources */,
 				009EAA47283DFE3D00AB1CF7 /* AppDelegate.swift in Sources */,
+				00E69437283FC23100C32AF9 /* UITextField.swift in Sources */,
+				00E69433283F7F5800C32AF9 /* Town.swift in Sources */,
 				00E6942D283F743E00C32AF9 /* LocalSearchViewController.swift in Sources */,
+				0098F83E2843144C00D129C6 /* PaddingLabel.swift in Sources */,
 				009EAA62283E048900AB1CF7 /* ViewControllerExtension.swift in Sources */,
 				009EAA49283DFE3D00AB1CF7 /* SceneDelegate.swift in Sources */,
 			);
